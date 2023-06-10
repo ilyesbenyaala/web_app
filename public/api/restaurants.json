@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Belcanto",
+    "image": "images/restaurants/belcanto.jpg",
+    "description": "Belcanto is a renowned fine dining restaurant in Lisbon, offering a sophisticated menu showcasing the best of Portuguese cuisine with a modern twist.",
+    "priceRange": "$$$",
+    "cuisine": "Contemporary Portuguese",
+    "location": "Largo de São Carlos 10, 1200-410 Lisbon, Portugal"
+  },
+  {
+    "name": "Alma",
+    "image": "images/restaurants/alma.jpg",
+    "description": "Alma is a Michelin-starred restaurant known for its elegant and inventive dishes that highlight traditional Portuguese flavors with a creative touch.",
+    "priceRange": "$$$",
+    "cuisine": "Modern Portuguese",
+    "location": "Rua Anchieta 15, 1200-023 Lisbon, Portugal"
+  },
+  {
+    "name": "Feitoria",
+    "image": "images/restaurants/belcanto.jpg",
+    "description": "Feitoria offers a refined dining experience with its innovative menu inspired by Portuguese gastronomy, incorporating the freshest local ingredients.",
+    "priceRange": "$$$",
+    "cuisine": "Contemporary Portuguese",
+    "location": "Doca do Bom Sucesso, 1400-038 Lisbon, Portugal"
+  },
+  {
+    "name": "Eleven",
+    "image": "images/restaurants/eleven.jpg",
+    "description": "Eleven is a prestigious restaurant with panoramic views of Lisbon, offering a sophisticated dining experience with a menu featuring modern European cuisine.",
+    "priceRange": "$$$",
+    "cuisine": "European",
+    "location": "Rua Marquês de Fronteira, Jardim Amália Rodrigues, 1070-051 Lisbon, Portugal"
+  },
+  {
+    "name": "Bairro do Avillez",
+    "image": "images/restaurants/Bairro-do-Avillez-Lisbon-Portugal-02.jpg",
+    "description": "Bairro do Avillez is a culinary complex created by chef José Avillez, featuring various dining concepts that celebrate Portuguese gastronomy.",
+    "priceRange": "$$",
+    "cuisine": "Portuguese",
+    "location": "Rua Nova da Trindade 18, 1200-303 Lisbon, Portugal"
+  },
+  {
+    "name": "Cantina do Avillez",
+    "image": "images/restaurants/avillez.jpeg",
+    "description": "Cantina do Avillez offers a casual and vibrant atmosphere where guests can enjoy traditional Portuguese dishes with a contemporary twist.",
+    "priceRange": "$$",
+    "cuisine": "Portuguese",
+    "location": "Rua Nova da Trindade 18, 1200-303 Lisbon, Portugal"
+  },
+  {
+    "name": "Mini Bar",
+    "image": "images/restaurants/min.jpeg",
+    "description": "Mini Bar is a trendy gastrobar known for its innovative tapas-style dishes and creative cocktails, offering a unique dining experience in Lisbon.",
+    "priceRange": "$$",
+    "cuisine": "Fusion",
+    "location": "Rua António Maria Cardoso 58, 1200-027 Lisbon, Portugal"
+  },
+    {
+      "name": "Loco",
+      "image": "images/restaurants/Loco-Lisboa.-Chef-Alexandre-Silva-1-1.jpg",
+      "description": "Loco is a Michelin-starred restaurant that pushes the boundaries of culinary creativity, serving imaginative and thought-provoking dishes.",
+      "priceRange": "$$$",
+      "cuisine": "Contemporary",
+      "location": "Rua dos Navegantes 53B, 1200-636 Lisbon, Portugal"
+    },
+    {
+      "name": "Cervejaria Ramiro",
+      "image": "images/restaurants/ramiro.jpg",
+      "description": "Cervejaria Ramiro is a legendary seafood restaurant in Lisbon, offering an extensive menu of fresh seafood delicacies in a lively and vibrant atmosphere.",
+      "priceRange": "$$",
+      "cuisine": "Seafood",
+      "location": "Avenida Almirante Reis 1, 1150-007 Lisbon, Portugal"
+    },
+    {
+      "name": "A Cervicheria",
+      "image": "images/restaurants/cevicheria.jpg",
+      "priceRange": "$$",
+      "cuisine": "Seafood",
+      "location": "Rua Dom Pedro V 129, 1250-096 Lisbon, Portugal"
+    },
+    {
+      "name": "Taberna da Rua das Flores",
+      "image": "images/restaurants/taberna.jpeg",
+      "description": "Taberna da Rua das Flores offers a cozy and rustic ambiance, serving traditional Portuguese dishes made with locally sourced ingredients.",
+      "priceRange": "$$",
+      "cuisine": "Portuguese",
+      "location": "Rua das Flores 103, 1200-194 Lisbon, Portugal"
+    },
+    {
+      "name": "Ponto Final",
+      "image": "images/restaurants/Sunset-at-Ponto-Final-in-Lisbon.jpg",
+      "description": "Ponto Final is a waterfront restaurant located on the south bank of the Tagus River, offering stunning views and delicious Portuguese cuisine.",
+      "priceRange": "$$",
+      "cuisine": "Portuguese",
+      "location": "Cais do Ginjal 72, 2800-284 Almada, Portugal"
+    },
+    {
+      "name": "Solar dos Presuntos",
+      "image": "images/restaurants/solar.jpg",
+      "description": "Solar dos Presuntos is a traditional Portuguese restaurant known for its hearty and flavorful dishes, specializing in grilled meats and seafood.",
+      "priceRange": "$$",
+      "cuisine": "Portuguese",
+      "location": "Rua Portas de Santo Antão 150, 1150-268 Lisbon, Portugal"
+    }
+  ]
+  

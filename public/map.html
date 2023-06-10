@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenStreetMap Example</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+      .container {
+      flex: 1;
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="images/illustration-portugal-flag_53876-18170.jpg.avif" alt="Portugal Flag">
+        <h1>Lisbon Restaurant Recommendations</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="top-restaurants.html">Top Restaurants</a>
+          <a href="cuisines.html">Cuisines</a>
+          <a href="map.html">Map</a>
+          <a href="price-ranges.html">Price Ranges</a>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="map">
+            <meta charset="utf-8" />
+            <title>OpenStreetMap Example</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        </div>
+        </div>
+  <div id="map" style="height: 700px;"></div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script>
+    var map = L.map('map').setView([38.7223, -9.1393], 12); // Lisbon coordinates
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+
+    var restaurants = [
+  {
+    "name": "Belcanto",
+    "location": [38.7102, -9.1396],
+    "description": "Belcanto is a Michelin-starred restaurant in Lisbon, known for its innovative Portuguese cuisine."
+  },
+  {
+    "name": "Alma",
+    "location": [38.7138, -9.1415],
+    "description": "Alma offers a contemporary dining experience in Lisbon, combining traditional Portuguese flavors with modern techniques."
+  },
+  {
+    "name": "Feitoria",
+    "location": [38.6934, -9.2041],
+    "description": "Feitoria is a renowned restaurant located in the Altis Belém Hotel, offering stunning views and a menu inspired by Portuguese history and gastronomy."
+  },
+  {
+    "name": "Eleven",
+    "location": [38.7196, -9.1662],
+    "description": "Eleven is a sophisticated restaurant situated on the top floor of a building in Eduardo VII Park, offering panoramic views of the city and a gourmet menu."
+  },
+  {
+    "name": "Bairro do Avillez",
+    "location": [38.7098, -9.1432],
+    "description": "Bairro do Avillez is a culinary hub created by renowned Portuguese chef José Avillez, featuring different dining concepts and flavors."
+  },
+  {
+    "name": "Cantina do Avillez",
+    "location": [38.7089, -9.1435],
+    "description": "Cantina do Avillez is a casual eatery by chef José Avillez, serving traditional Portuguese dishes with a modern twist."
+  },
+  {
+    "name": "Mini Bar",
+    "location": [38.7086, -9.1447],
+    "description": "Mini Bar is a unique gastronomic experience by chef José Avillez, offering a playful menu of small plates and creative cocktails."
+  },
+  {
+    "name": "Loco",
+    "location": [38.7063, -9.1593],
+    "description": "Loco is a Michelin-starred restaurant in Lisbon, known for its avant-garde cuisine and focus on seasonal and locally sourced ingredients."
+  },
+  {
+    "name": "Cervejaria Ramiro",
+    "location": [38.7166, -9.1366],
+    "description": "Cervejaria Ramiro is a famous seafood restaurant in Lisbon, serving a wide variety of fresh seafood dishes in a lively atmosphere."
+  },
+  {
+    "name": "A Cevicheria",
+    "location": [38.7099, -9.1504],
+    "description": "A Cevicheria is a popular restaurant specializing in ceviche, offering a creative menu inspired by Peruvian flavors."
+  },
+  {
+    "name": "Taberna da Rua das Flores",
+    "location": [38.7122, -9.1438],
+    "description": "Taberna da Rua das Flores is a cozy and traditional tavern in Lisbon, serving delicious Portuguese dishes and wines."
+  },
+  {
+    "name": "Porto Final",
+    "location": [38.7088, -9.1427],
+    "description": "Porto Final is a riverside restaurant offering stunning views of the Tagus River and a menu featuring fresh seafood and Portuguese cuisine."
+  },
+  {
+    "name": "Solar dos Presuntos",
+    "location": [38.7203, -9.1486],
+    "description": "Solar dos Presuntos is a long-standing restaurant in Lisbon, renowned for its traditional Portuguese dishes and warm atmosphere."
+}
+]
+
+
+    restaurants.forEach(function(restaurant) {
+      var marker = L.marker(restaurant.location).addTo(map);
+      
+      marker.on('click', function() {
+        var popupContent = `
+          <h3>${restaurant.name}</h3>
+          <p>${restaurant.description}</p>
+        `;
+        L.popup()
+          .setLatLng(restaurant.location)
+          .setContent(popupContent)
+          .openOn(map);
+      });
+    });
+  </script>
+</body>
+</html>

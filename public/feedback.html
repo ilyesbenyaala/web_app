@@ -1,0 +1,80 @@
+<style>
+    #feedbackForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+</style>
+<form id="feedbackForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Feedback:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+      const form = document.getElementById('feedbackForm');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  const feedbackData = {
+    name: name,
+    email: email,
+    message: message
+  };
+  
+  fetch('http://localhost:3000/api/feedback.json', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(feedbackData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle success response or show thank you message
+    console.log(data);
+    alert('Thank you for your feedback!');
+    form.reset();
+  })
+  .catch(error => {
+    // Handle error response
+    console.error(error);
+    alert('Oops! Something went wrong. Please try again later.');
+  });
+});
+
+  </script>

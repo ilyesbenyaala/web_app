@@ -1,0 +1,39 @@
+{
+  "cuisines": [
+    {
+      "name": "Portuguese",
+      "description": "Traditional Portuguese cuisine with a focus on fresh seafood, hearty stews, and flavorful desserts.",
+      "image": "images/cuisines/pratoscozinhaportuguesa630x420.jpg"
+    },
+    {
+      "name": "Italian",
+      "description": "Authentic Italian dishes including pizza, pasta, and gelato, prepared with fresh ingredients and traditional recipes.",
+      "image": "images/cuisines/italian-cuisine-47-1440x600.jpg"
+    },
+    {
+      "name": "Japanese",
+      "description": "Exquisite Japanese cuisine featuring sushi, sashimi, ramen, and other delicacies, crafted with precision and artistry.",
+      "image": "images/cuisines/japan.jpg"
+    },
+    {
+      "name": "Mexican",
+      "description": "Vibrant Mexican flavors with dishes like tacos, enchiladas, and guacamole, accompanied by refreshing margaritas.",
+      "image": "images/cuisines/mex.jpg"
+    },
+    {
+      "name": "Indian",
+      "description": "Spicy and aromatic Indian cuisine with a variety of curries, biryanis, and tandoori specialties, bursting with flavors.",
+      "image": "images/cuisines/indian.jpeg"
+    },
+    {
+      "name": "Mediterranean",
+      "description": "Fresh and healthy Mediterranean dishes showcasing ingredients like olive oil, vegetables, seafood, and herbs.",
+      "image": "images/cuisines/med.jpg"
+    },
+    {
+      "name": "Brazilian",
+      "description": "Authentic Brazilian cuisine with a mix of African, Portuguese, and indigenous influences, featuring dishes like feijoada and brigadeiros.",
+      "image": "images/cuisines/brazil.jpeg"
+    }
+  ]
+}
